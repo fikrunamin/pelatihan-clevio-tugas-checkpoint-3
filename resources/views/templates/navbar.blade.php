@@ -11,8 +11,8 @@
                 </div>
                 <div class="flex items-center gap-x-8 font-medium">
                     <div class="{{\request()->segment(1) == '' ? 'border-b-2 border-black' : ''}}"><a href="{{route('index')}}">BERANDA</a></div>
-                    <div class="{{\request()->segment(1) == 'mapel' ? 'border-b-2 border-black' : ''}}"><a href="{{route('mapel.index')}}">MATA PELAJARAN</a></div>
-                    <div class="{{\request()->segment(1) == 'berita' ? 'border-b-2 border-black' : ''}}"><a href="{{route('berita.index')}}">BERITA</a></div>
+                    <div class="{{\request()->segment(1) == 'mapel' ? 'border-b-2 border-black' : ''}}"><a href="{{route('mapel')}}">MATA PELAJARAN</a></div>
+                    <div class="{{\request()->segment(1) == 'berita' ? 'border-b-2 border-black' : ''}}"><a href="{{route('berita')}}">BERITA</a></div>
                     <div class="{{\request()->segment(1) == 'dashboard' ? 'border-b-2 border-black' : ''}}"><a href="{{route('dashboard.index')}}">DASHBOARD</a></div>
                 </div>
             </div>

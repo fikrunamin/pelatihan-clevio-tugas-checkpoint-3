@@ -40,7 +40,7 @@
                                     <td>{{$berita->updated_at->diffForHumans()}}</td>
                                     <td>
                                         <div class="flex gap-x-5">
-                                            <a href="{{route('berita.show', ['beritum' => $berita->id])}}"><i
+                                            <a href="{{route('berita.show', ['slug' => $berita->slug])}}"><i
                                                     class="material-icons">visibility</i></a>
                                             <a href="{{route('berita.edit', ['beritum' => $berita->id])}}"><i
                                                     class="material-icons">edit</i></a>

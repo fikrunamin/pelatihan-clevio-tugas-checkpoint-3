@@ -35,7 +35,7 @@
                                     <td>{{$mapel->updated_at->diffForHumans()}}</td>
                                     <td>
                                         <div class="flex gap-x-5">
-                                            <a href="{{route('mapel.show', ['mapel' => $mapel->id])}}"><i
+                                            <a href="{{route('mapel.show', ['slug' => $mapel->slug])}}"><i
                                                     class="material-icons">visibility</i></a>
                                             <a href="{{route('mapel.edit', ['mapel' => $mapel->id])}}"><i
                                                     class="material-icons">edit</i></a>

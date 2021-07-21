@@ -91,7 +91,21 @@ class MataPelajaran extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $mapel = MataPelajaranModel::find($id);
+        $validated = $request->validate([
+            'nama' => 'required|max:255',
+            'kelas' => 'required',
+            'deskripsi' => 'required',
+        ]);
+        if ($validated) {
+            $mapel->update([
+                'nama' => $request->nama,
+                'kelas' => $request->kelas,
+                'deskripsi' => $request->deskripsi,
+            ]);
+            return redirect()->route('mapel.index')->with('success', 'Berhasil mengubah data!');
+        }
+        return back()->withInput();
     }
 
     /**
